@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
 import { UploadCsvComponent } from './upload-csv/upload-csv.component';
 import { ExportCsvComponent } from './export-csv/export-csv.component';
 import { AmendComponent } from './amend/amend.component';
@@ -18,7 +17,6 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
     UploadCsvComponent,
     ExportCsvComponent,
     AmendComponent,

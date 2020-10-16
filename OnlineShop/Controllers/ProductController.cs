@@ -65,7 +65,7 @@ namespace OnlineShop.Controllers
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"Error setting new Product price. Exception: {e}");
+                _logger.LogError(e, $"Error uploading Products. Exception: {e}");
                 return ServerError(new MessageResponse() { Message = "Unexpected error has occurred" });
             }
         }
@@ -82,7 +82,7 @@ namespace OnlineShop.Controllers
             }
             catch (Exception e)
             {
-                _logger.LogError(e, $"Error setting new Product price. Exception: {e}");
+                _logger.LogError(e, $"Error exporting Products. Exception: {e}");
                 return ServerError(new MessageResponse() { Message = "Unexpected error has occurred" });
             }
         }
