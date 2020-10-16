@@ -1,0 +1,8 @@
+<h1 class="display-4">Upload Fruit Prices</h1>
+<form>
+  <div class="form-group">
+    <label for="csvFile">Please upload a new file</label>
+    <input type="file" class="form-control-file" id="csvFileUpload" (change)="uploadFile($event.target.files)">
+  </div>
+</form>
+<div *ngIf="showUploadSuccess">Products uploaded successfully</div>

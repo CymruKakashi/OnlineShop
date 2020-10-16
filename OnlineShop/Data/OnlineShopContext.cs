@@ -14,6 +14,7 @@ namespace OnlineShop.Data
         }
         public DbSet<Currency> Currency { get; set; }
         public DbSet<ProductType> ProductType { get; set; }
+        public DbSet<Product> Product { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -24,7 +24,8 @@ namespace OnlineShop.Data
             var currency = new Currency()
             {
                 CurrencySymbol = "£",
-                Name = "British Pound"
+                Name = "British Pound",
+                IsoCode = "GBP"
             };
 
             context.ProductType.Add(productType);

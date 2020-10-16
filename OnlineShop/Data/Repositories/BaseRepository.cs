@@ -15,9 +15,13 @@ namespace OnlineShop.Data.Repositories
             _context = context;
         }
 
-        protected async Task<IEnumerable<T>> GetAllAsync<T>() where T: class 
+        protected async Task<IEnumerable<T>> GetAllAsync<T>(string[] includes = null) where T: class 
         {
-            return await _context.Set<T>().ToListAsync();
+            var query = _context.Set<T>().AsQueryable();
+            if (includes != null)
+                query = includes.Aggregate(query, (query, include) => query.Include(include));
+            return await query.ToListAsync();
         }
+
     }
 }

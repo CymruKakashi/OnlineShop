@@ -1,4 +1,4 @@
-<h1 class="display-4">Fruit</h1>
+<h1 class="display-4">Amend</h1>
 <div class="row">
   <div *ngFor="let fruit of fruits" class="col-sm-4">
     <img class="card-img-top" src="../../assets/image.png" alt="Card image cap">
@@ -6,6 +6,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ fruit.name }}</h5>
         <p class="card-text">{{ fruit.price | currency: fruit.currency.isoCode}}</p>
+        <app-update-product [productId]="fruit.id" [refreshCallback]="boundRefresh"></app-update-product>
       </div>
     </div>
   </div>

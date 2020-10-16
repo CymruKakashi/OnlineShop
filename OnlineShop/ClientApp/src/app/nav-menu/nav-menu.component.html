@@ -20,21 +20,19 @@
         [ngClass]="{ show: isExpanded }"
       >
         <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-light" [routerLink]="['/']">Home</a>
-          </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-light" [routerLink]="['/counter']"
-              >Counter</a
+            <a class="nav-link text-light" [routerLink]="['/uploadCsv']"
+              >Upload CSV</a
             >
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-light" [routerLink]="['/fetch-data']"
-              >Fetch data</a
+            <a class="nav-link text-light" [routerLink]="['/exportCsv']"
+              >Export CSV</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-light" [routerLink]="['/amend']"
+              >Amend</a
             >
           </li>
         </ul>

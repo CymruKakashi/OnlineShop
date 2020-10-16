@@ -8,7 +8,10 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { UploadCsvComponent } from './upload-csv/upload-csv.component';
+import { ExportCsvComponent } from './export-csv/export-csv.component';
+import { AmendComponent } from './amend/amend.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    UploadCsvComponent,
+    ExportCsvComponent,
+    AmendComponent,
+    UpdateProductComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -24,8 +30,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'uploadCsv', component: UploadCsvComponent },
+      { path: 'exportCsv', component: ExportCsvComponent },
+      { path: 'amend', component: AmendComponent },
     ])
   ],
   providers: [],

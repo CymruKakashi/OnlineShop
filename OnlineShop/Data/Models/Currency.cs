@@ -12,6 +12,7 @@ namespace OnlineShop.Models
         public int Id { get; set; }
         public String Name { get; set; }
         public String CurrencySymbol { get; set; }
+        public String IsoCode { get; set; }
         [JsonIgnore]
         public virtual List<Product> Products { get; set; }
     }

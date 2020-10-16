@@ -18,9 +18,7 @@ namespace OnlineShop.Models
         public DateTime UpdatedDate { get; set; }
         public int ProductTypeId { get; set; }
         public int CurrencyId { get; set; }
-        [JsonIgnore]
         public virtual ProductType ProductType { get; set; }
-        [JsonIgnore]
         public virtual Currency Currency { get; set; }
     }   
 }
